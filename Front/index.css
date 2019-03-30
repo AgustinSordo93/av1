@@ -1,0 +1,32 @@
+.cuadro {
+    display:  inline-block;
+    width : 100px;
+    height : 100px;
+    border : 2px solid black;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.lista {
+    margin : 100px;
+    width : 80%;
+}
+
+.lista-item {
+    margin-top : 6px;
+}
+
+.formulario {
+    width : 80%;
+    margin : 100px;
+}

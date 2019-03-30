@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Agenda</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="lista" class="lista"></div>
+
+    <div class="formulario">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input class="form-control" type="text" id="nombre" name="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input class="form-control" type="text" id="apellido" name="apellido">
+        </div>
+
+        <div class="form-group">
+            <label for="observaciones">Observaciones</label>
+            <input class="form-control" type="text" id="observaciones" name="observaciones">
+        </div>
+        <div class="form-group d-flex justify-content-end">
+            <button class="btn btn-success" onclick="save()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
