@@ -18,7 +18,7 @@ public class Contacto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
-	private String Contacto;
+	private String contacto;
 
 	@JsonBackReference
 	@ManyToOne
@@ -27,14 +27,14 @@ public class Contacto {
 
 	@ManyToOne
 	@JoinColumn(name = "tipo_contacto_id")
-	private TiposContacto tipocontacto;
+	private TiposContacto tipoContacto;
 	
 	public String getContacto() {
-		return Contacto;
+		return contacto;
 	}
 
 	public void setContacto(String contacto) {
-		Contacto = contacto;
+		this.contacto = contacto;
 	}
 
 	public Long getId() {
@@ -53,12 +53,12 @@ public class Contacto {
 		this.persona = persona;
 	}
 
-	public TiposContacto getTipocontacto() {
-		return tipocontacto;
+	public TiposContacto getTipoContacto() {
+		return tipoContacto;
 	}
 
-	public void setTipocontacto(TiposContacto tipocontacto) {
-		this.tipocontacto = tipocontacto;
+	public void setTipoContacto(TiposContacto tipocontacto) {
+		this.tipoContacto = tipocontacto;
 	}
 	
 	

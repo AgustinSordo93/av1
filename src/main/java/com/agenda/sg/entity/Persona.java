@@ -26,11 +26,11 @@ public class Persona {
 	
 	@JsonManagedReference
 	@OneToMany(mappedBy = "persona", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Contacto> contacto;
+	private List<Contacto> contactos;
 
 	@JsonManagedReference
 	@OneToMany(mappedBy = "persona", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Domicilio> domicilio;
+	private List<Domicilio> domicilios;
 	
 	
 	public Long getId() {
@@ -57,17 +57,17 @@ public class Persona {
 	public void setObservaciones(String observaciones) {
 		this.observaciones = observaciones;
 	}
-	public List<Contacto> getContacto() {
-		return contacto;
+	public List<Contacto> getContactos() {
+		return contactos;
 	}
-	public void setContacto(List<Contacto> contacto) {
-		this.contacto = contacto;
+	public void setContactos(List<Contacto> contactos) {
+		this.contactos = contactos;
 	}
-	public List<Domicilio> getDomicilio() {
-		return domicilio;
+	public List<Domicilio> getDomicilios() {
+		return domicilios;
 	}
-	public void setDomicilio(List<Domicilio> domicilio) {
-		this.domicilio = domicilio;
+	public void setDomicilios(List<Domicilio> domicilios) {
+		this.domicilios = domicilios;
 	}
 	
 	
